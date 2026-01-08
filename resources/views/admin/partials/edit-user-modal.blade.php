@@ -1,9 +1,9 @@
 <!-- Edit User Modal -->
 <div id="editUserModal" class="modal-overlay" style="display: none;">
-  <div class="modal-container">
+  <div class="modal-content">
     <div class="modal-header">
       <h3>Edit User</h3>
-      <button type="button" class="close-modal" onclick="closeEditModal()">
+      <button type="button" class="modal-close" onclick="closeEditModal()">
         <i class="fas fa-times"></i>
       </button>
     </div>
