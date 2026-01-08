@@ -23,7 +23,7 @@
         <!-- Shared Menus for Admin Order -->
         <li>
           <a href="{{ route('admin.bookings.index') }}"
-            class="{{ request()->routeIs('admin.bookings.*') ? 'active' : '' }}">
+            class="{{ request()->routeIs('admin.bookings.*') && !request()->routeIs('admin.bookings.verification') ? 'active' : '' }}">
             <i class="fas fa-calendar-check"></i>
             <span>Booking</span>
           </a>
@@ -75,7 +75,7 @@
         {{-- 4. Reservasi (Renamed from Booking) --}}
         <li>
           <a href="{{ route('admin.bookings.index') }}"
-            class="{{ request()->routeIs('admin.bookings.*') ? 'active' : '' }}">
+            class="{{ request()->routeIs('admin.bookings.*') && !request()->routeIs('admin.bookings.verification') ? 'active' : '' }}">
             <i class="fas fa-calendar-check"></i>
             <span>Reservasi</span>
           </a>
